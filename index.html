@@ -52,7 +52,7 @@
   <div class="caja">
     <div class="eyebrow">PH Plus · com.phplus.app</div>
     <h1>Política de Tratamiento de Datos Personales</h1>
-    <p>Versión 1.0 · Vigente desde el 26 de agosto de 2026</p>
+    <p>Versión 1.1 · Vigente desde el 26 de agosto de 2026</p>
   </div>
 </header>
 
@@ -145,7 +145,29 @@
   <p style="margin:0"><strong>Lo que el servidor del Proveedor NO recibe:</strong> nombres de residentes, documentos de identidad, unidades, vehículos, mascotas, visitantes, fotografías, minuta, novedades, correspondencia ni la ubicación de las rondas. Esa información no sale del equipo salvo cifrada y con destino a otro equipo de la misma copropiedad.</p>
 </div>
 
-<p>La aplicación <strong>no incorpora publicidad, ni analítica de uso, ni herramientas de seguimiento, ni informes automáticos de fallos</strong>. No hay ningún componente de terceros dentro de la aplicación que reciba datos de quien la usa.</p>
+<p>La aplicación <strong>no incorpora publicidad, ni analítica de uso, ni herramientas de seguimiento, ni informes automáticos de fallos</strong>.</p>
+
+<h3>Los dos únicos terceros que la aplicación contacta</h3>
+
+<p>Fuera del servidor del Proveedor, la aplicación se comunica con dos servicios ajenos, y conviene saber exactamente cuándo y con qué:</p>
+
+<table>
+  <thead><tr><th>Servicio</th><th>Cuándo</th><th>Qué recibe</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Mapbox</strong> (Mapbox, Inc., Estados Unidos)</td>
+      <td>Al mostrar el mapa sobre el que se sitúan los puntos de ronda</td>
+      <td>Las coordenadas de las porciones de mapa solicitadas, que indican <strong>de forma aproximada la zona donde está la copropiedad</strong>, junto con los metadatos propios de cualquier conexión (dirección IP). No recibe el recorrido del vigilante, ni ningún dato de residentes o visitantes.</td>
+    </tr>
+    <tr>
+      <td><strong>WhatsApp</strong> (WhatsApp LLC / Meta)</td>
+      <td><strong>Sólo si el operador lo decide</strong>, al avisar a un residente de que llegó su correspondencia</td>
+      <td>La aplicación abre WhatsApp con el número del residente y un mensaje ya escrito, y puede adjuntar la fotografía del envío. <strong>El envío lo confirma una persona pulsando «enviar» dentro de WhatsApp</strong>: PH Plus no manda nada por su cuenta. A partir de ahí, ese contenido se rige por las políticas de WhatsApp.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ninguno de los dos recibe la información operativa de la copropiedad, y ninguno está integrado como componente dentro de la aplicación: son una descarga de imágenes de mapa y la apertura de otra aplicación instalada en el equipo.</p>
 
 <h2>5. Cómo se protege la información</h2>
 
@@ -221,6 +243,8 @@
     <tr><td><strong>Cloudflare, Inc.</strong></td><td>Red de distribución y ejecución de los servicios de licencias y del portal</td><td>Metadatos de conexión y el tráfico ya cifrado</td></tr>
     <tr><td><strong>Supabase, Inc.</strong></td><td>Base de datos de licencias, equipos y auditoría</td><td>Los datos de la sección 4</td></tr>
     <tr><td><strong>Google LLC</strong></td><td>Distribución de la aplicación a través de Google Play</td><td>Los datos que Google trate bajo sus propias políticas al descargarse la aplicación</td></tr>
+    <tr><td><strong>Mapbox, Inc.</strong></td><td>Imágenes del mapa de rondas</td><td>La zona aproximada de la copropiedad y los metadatos de conexión, según la sección 4</td></tr>
+    <tr><td><strong>WhatsApp LLC</strong></td><td>Aviso de correspondencia, sólo cuando el operador lo decide</td><td>El número del residente, el mensaje y, si se adjunta, la fotografía del envío</td></tr>
   </tbody>
 </table>
 
@@ -277,7 +301,7 @@
 
 <footer>
   <p><strong>PH Plus</strong> · <code>com.phplus.app</code><br>
-  Política de Tratamiento de Datos Personales, versión 1.0, vigente desde el 26 de agosto de 2026.<br>
+  Política de Tratamiento de Datos Personales, versión 1.1, vigente desde el 26 de agosto de 2026.<br>
   Expedida conforme a la Ley 1581 de 2012 y al Decreto 1074 de 2015 de la República de Colombia.</p>
 </footer>
 
