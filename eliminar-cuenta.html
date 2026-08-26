@@ -1,0 +1,129 @@
+<!doctype html>
+<!--
+  FUENTE: PH_PLUS_Server/workers/legal/src/eliminacion-de-cuenta.html
+
+  Existe porque Google Play exige, a toda app que permita crear cuentas, una
+  direccion publica donde se pueda pedir la eliminacion **sin tener que
+  instalar la app**. La cuenta de PH Plus es local al equipo, asi que la
+  respuesta honesta no es un formulario: es explicar donde vive cada cosa y
+  como se borra cada una.
+
+  Se publica igual que la politica: Worker del proveedor y GitHub Pages, con
+  `scripts/publicar-politica.sh` como unica forma de copiar.
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminación de cuenta y de datos · PH Plus</title>
+<meta name="description" content="Cómo eliminar una cuenta de usuario y los datos asociados en la aplicación PH Plus (com.phplus.app).">
+<style>
+  :root{--tinta:#1b2733;--suave:#5b6b7b;--linea:#dde5ec;--fondo:#f7fafb;--marca:#17324D;--acento:#0c8089;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{background:var(--marca);color:#fff;padding:2.5rem 1.25rem}
+  header .caja,main{max-width:52rem;margin:0 auto}
+  header h1{margin:.4rem 0 .3rem;font-size:1.65rem;line-height:1.25}
+  header p{margin:0;color:#c8d8e6;font-size:.95rem}
+  .eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;color:#8fb4cc;font-weight:700}
+  main{padding:2rem 1.25rem 4rem}
+  h2{margin:2.4rem 0 .7rem;font-size:1.18rem;line-height:1.3;padding-bottom:.4rem;border-bottom:2px solid var(--linea)}
+  p,li{margin:.6rem 0}
+  ul,ol{padding-left:1.3rem}
+  table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.92rem;display:block;overflow-x:auto}
+  th,td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+  th{background:#eef4f7;font-weight:600}
+  .clave{border-left:4px solid #b8860b;background:#fdf6e3;padding:.85rem 1rem;border-radius:0 .5rem .5rem 0;margin:1.2rem 0}
+  .aviso{border-left:4px solid var(--acento);background:#eaf5f6;padding:.85rem 1rem;border-radius:0 .5rem .5rem 0;margin:1.2rem 0}
+  footer{border-top:1px solid var(--linea);margin-top:3rem;padding-top:1.2rem;color:var(--suave);font-size:.87rem}
+  code{background:#eef2f5;padding:.1rem .35rem;border-radius:.25rem;font-size:.9em}
+  a{color:var(--acento)}
+  @media (max-width:640px){header{padding:1.8rem 1.1rem}header h1{font-size:1.35rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="caja">
+    <div class="eyebrow">PH Plus · com.phplus.app</div>
+    <h1>Eliminación de cuenta y de datos</h1>
+    <p>Actualizado el 26 de agosto de 2026</p>
+  </div>
+</header>
+
+<main>
+
+<p>Esta página explica cómo eliminar una cuenta de usuario de <strong>PH Plus</strong> y los datos asociados. Puede seguirse sin instalar la aplicación.</p>
+
+<div class="aviso">
+  <p style="margin:0"><strong>Antes de nada, algo que cambia toda la respuesta:</strong> las cuentas de PH Plus <strong>no existen en ningún servidor</strong>. Se crean dentro del equipo (tableta o teléfono) de la copropiedad y se guardan cifradas allí. No hay registro con correo, ni contraseña recuperable, ni perfil en la nube. Por eso la eliminación no se pide con un formulario: se hace en el equipo.</p>
+</div>
+
+<h2>1. Eliminar una cuenta de usuario</h2>
+
+<p>La cuenta la administra la <strong>copropiedad</strong>, que es quien la creó. Hay dos caminos, según lo que se quiera conseguir:</p>
+
+<table>
+  <thead><tr><th>Qué se quiere</th><th>Cómo se hace</th><th>Efecto</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Que una persona deje de poder entrar</td>
+      <td>En el equipo, un administrador entra en <strong>Administración → Usuarios</strong>, abre la cuenta y pulsa <strong>«Desactivar cuenta»</strong>.</td>
+      <td>La cuenta deja de admitir el acceso de forma inmediata. Su nombre se conserva en los registros que esa persona firmó, porque una minuta de portería no puede quedarse sin autor: es un registro de responsabilidad.</td>
+    </tr>
+    <tr>
+      <td>Borrar la cuenta y todo lo demás</td>
+      <td><strong>Desinstalar la aplicación</strong> del equipo.</td>
+      <td>Android elimina el área privada de la aplicación, que contiene la base de datos cifrada y las fotografías. No queda nada recuperable en el equipo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="clave">
+  <p style="margin:0"><strong>Por qué desactivar no borra el nombre del historial.</strong> Los registros de portería —quién abrió el turno, quién anotó una novedad, quién autorizó una entrada— existen precisamente para poder responder por lo ocurrido. Borrar el autor dejaría un registro sin responsable, que es lo contrario de para lo que se lleva. Si lo que se necesita es que no quede ningún dato, el camino es desinstalar.</p>
+</div>
+
+<h2>2. Eliminar los datos que guarda el proveedor</h2>
+
+<p>El servidor del proveedor <strong>no guarda cuentas de usuario de la aplicación</strong>, ni residentes, ni visitantes, ni fotografías, ni minuta. Lo que guarda es la información necesaria para controlar las licencias:</p>
+
+<ul>
+  <li>Nombre, NIT y contacto de la copropiedad contratante.</li>
+  <li>Las licencias emitidas y su vigencia.</li>
+  <li>Los equipos enrolados: una huella derivada del identificador que Android asigna a la aplicación, la clave pública del equipo, un apodo y la fecha de la última conexión.</li>
+  <li>La auditoría de qué licencia o equipo se emitió, cambió o revocó, y quién lo hizo.</li>
+</ul>
+
+<p>Para solicitar la eliminación de esa información, escriba a:</p>
+
+<p style="font-size:1.1rem"><strong><a href="mailto:phplus2000@gmail.com">phplus2000@gmail.com</a></strong></p>
+
+<p>Indique el nombre de la copropiedad y qué desea eliminar. La solicitud se atiende en un máximo de <strong>quince (15) días hábiles</strong>, prorrogables por ocho (8) más informando el motivo, conforme al artículo 15 de la Ley 1581 de 2012.</p>
+
+<h2>3. Qué se conserva y por cuánto tiempo</h2>
+
+<table>
+  <thead><tr><th>Información</th><th>Plazo</th></tr></thead>
+  <tbody>
+    <tr><td>Cuenta y datos operativos en el equipo</td><td>Hasta que la copropiedad los borre o se desinstale la aplicación</td></tr>
+    <tr><td>Posiciones registradas durante una ronda</td><td><strong>Se purgan a los 30 días</strong> y se borran junto con la ronda</td></tr>
+    <tr><td>Mensajes cifrados en tránsito entre equipos</td><td>Se borran al entregarse y <strong>caducan a los 7 días</strong></td></tr>
+    <tr><td>Licencias, equipos y datos de la copropiedad</td><td>Mientras dure la relación comercial y, después, el tiempo que exijan las obligaciones contables, tributarias y comerciales</td></tr>
+    <tr><td>Auditoría administrativa</td><td>Mientras subsista el deber de responder por quién emitió o revocó cada licencia</td></tr>
+  </tbody>
+</table>
+
+<h2>4. Si usted es residente o visitante</h2>
+
+<p>Si sus datos figuran en el censo o en el registro de visitas de una copropiedad, <strong>su interlocutor es la administración de esa copropiedad</strong>: es ella quien decide qué se registra y por cuánto tiempo, y quien puede eliminarlo. El proveedor no tiene acceso a esa información, porque viaja cifrada con una clave que sólo conocen los equipos.</p>
+
+<p>Puede escribir de todos modos a <a href="mailto:phplus2000@gmail.com">phplus2000@gmail.com</a> y su solicitud se trasladará a la copropiedad correspondiente, informándole de ello.</p>
+
+<footer>
+  <p><strong>PH Plus</strong> · <code>com.phplus.app</code><br>
+  Véase también la <a href="/privacidad">Política de Tratamiento de Datos Personales</a>.</p>
+</footer>
+
+</main>
+</body>
+</html>
